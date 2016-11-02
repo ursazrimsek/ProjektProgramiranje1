@@ -1,5 +1,6 @@
 import re
 import orodja
+import os
 
 def zajemi_rezultate():
     osnova = 'http://classic.autosport.com/results.php'
@@ -14,6 +15,9 @@ def zajemi_rezultate():
             orodja.shrani(naslov2, ime)
 
 
-
+def izbrisi_neobstojece():
+    for datoteka in orodja.datoteke('rezultati/'):
+        if 'Results for this race are not available' in orodja.vsebina_datoteke(datoteka):
+            os.remove(datoteka)
 
 
