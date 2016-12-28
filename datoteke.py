@@ -61,4 +61,4 @@ rezultati_dirk = izloci_rezultate('rezultati/', regex_rezultati)
 skupni_rezultati = izloci_rezultate('skupni_rezultati/', regex_skupno)
 
 orodja.zapisi_tabelo(rezultati_dirk, ['Leto', 'Dirka', 'Zmagovalec', 'Mostvo_zmagovalca', 'Drugi', 'Mostvo_drugega', 'Tretji', 'Mostvo_tretjega'], 'csv-datoteke/rezultati_dirk.csv')
-orodja.zapisi_tabelo(skupni_rezultati, ['Leto', 'Prvak', 'Prvi_proizvajalec', 'Podprvak','Drugi_proizvajalec'], 'csv-datoteke/skupni_rezultati.csv')
+orodja.zapisi_tabelo(skupni_rezultati, ['Leto', 'Prvak', 'Podprvak', 'Prvi_proizvajalec', 'Drugi_proizvajalec'], 'csv-datoteke/skupni_rezultati.csv')
